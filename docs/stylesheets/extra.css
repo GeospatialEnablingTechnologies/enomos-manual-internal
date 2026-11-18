@@ -1,0 +1,61 @@
+/* Enomos blue: #003366 (from enomos.svg) */
+
+/* Light: white header, Enomos blue accents */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color:        #FFFFFF;
+  --md-primary-fg-color--light: #FFFFFF;
+  --md-primary-fg-color--dark:  #FFFFFF;
+  --md-primary-bg-color:        #003366;
+  --md-primary-bg-color--light: #003366b3;
+}
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: #003366;
+  --md-typeset-a-color: #003366;
+}
+
+/* Dark: Enomos blue background, white text */
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-primary-fg-color:        #002447;
+  --md-primary-fg-color--light: #002447;
+  --md-primary-fg-color--dark:  #001a33;
+  --md-primary-bg-color:        #FFFFFF;
+  --md-primary-bg-color--light: #FFFFFFb3;
+  --md-default-bg-color:        #003366;
+  --md-default-fg-color:        #FFFFFF;
+  --md-default-fg-color--light: #FFFFFFb3;
+  --md-default-fg-color--lighter: #FFFFFF73;
+  --md-default-fg-color--lightest: #FFFFFF1f;
+  --md-typeset-color:           #FFFFFF;
+  --md-footer-bg-color:         #001a33;
+  --md-footer-bg-color--dark:   #001429;
+  --md-code-bg-color:           #002447;
+}
+[data-md-color-scheme="slate"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: #FFFFFF;
+  --md-typeset-a-color: #9CC3EB;
+}
+
+/* Material takes one logo; swap to the white one in dark mode */
+[data-md-color-scheme="slate"] .md-logo img {
+  content: url("../assets/enomos-white.svg");
+}
+
+.md-header {
+  border-bottom: 1px solid #D0D7DE;
+}
+[data-md-color-scheme="slate"] .md-header {
+  border-bottom-color: #001a33;
+}
+
+[data-md-color-scheme="default"] .md-search__form {
+  background-color: #e7ebee;
+}
+[data-md-color-scheme="default"] .md-search__input,
+[data-md-color-scheme="default"] .md-search__icon {
+  color: #003366;
+}
+
+.md-typeset h2 {
+  border-bottom: 2px solid var(--md-accent-fg-color);
+  padding-bottom: 0.2em;
+}

@@ -1,0 +1,72 @@
+site_name: ΕΝΟΜΟΣ - Εγχειρίδιο Εσωτερικών Χρηστών
+site_description: Εγχειρίδιο εσωτερικών χρηστών για την πλατφόρμα διαμεσολάβησης ΕΝΟΜΟΣ της ΡΑΑΕΥ
+
+theme:
+  name: material
+  language: el
+  logo: assets/enomos.svg
+  favicon: assets/enomos.svg
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  font:
+    text: Open Sans,Arial,sans-serif
+    code: JetBrains Mono
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+nav:
+  - Αρχική: index.md
+  - Πρόσβαση: access.md
+  - Αιτήσεις: applications.md
+  - Χρήστες: users.md
+  - Οργανισμοί: organisations.md
+  - Διασυνδέσεις: connections.md
+  - Ρυθμίσεις: settings.md
+
