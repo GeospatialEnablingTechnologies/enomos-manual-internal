@@ -64,6 +64,7 @@ plugins:
 nav:
   - Αρχική: index.md
   - Πρόσβαση: access.md
+  - Πίνακας ελέγχου: dashboard.md
   - Αιτήσεις: applications.md
   - Χρήστες: users.md
   - Οργανισμοί: organisations.md
